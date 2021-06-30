@@ -1,0 +1,7 @@
+{{#each post}}
+<form action="/atualizar/{{dataValues.id}}" method="POST">    
+    <input type="text" name="titulo" value="{{dataValues.titulo}}">
+    <textarea name="conteudo" >{{dataValues.conteudo}}</textarea> 
+    <input type="submit" value="editar">   
+</form>
+{{/each}}
